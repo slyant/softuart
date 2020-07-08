@@ -3,8 +3,8 @@
  * Date           Author       Notes
  * 2020-07-05     Slyant       the first version
  */
-#ifndef DRIVERS_DRV_SOFTUART_H_
-#define DRIVERS_DRV_SOFTUART_H_
+#ifndef STM32_DRV_DRV_SOFTUART_H_
+#define STM32_DRV_DRV_SOFTUART_H_
 
 #include <rtthread.h>
 #include <board.h>
