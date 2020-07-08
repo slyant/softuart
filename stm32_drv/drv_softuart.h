@@ -9,6 +9,28 @@
 #include <rtthread.h>
 #include <board.h>
 
+/*
+----------------- Please add macro definition in board.h ------------------
+-------------------------- SOFTUART CONFIG BEGIN --------------------------
+
+ * After configuring corresponding SOFTUART, you can use it.
+ *
+ * STEP 1, define macro define related to the serial port opening based on the serial port number
+ *                 such as     #define BSP_USING_SOFTUART1
+ *
+ * STEP 2, according to the corresponding pin of serial port, define the related serial port information macro
+ *                 such as     #define BSP_SOFTUART1_TX_PIN       "PA9"
+ *                             #define BSP_SOFTUART1_RX_PIN       "PA10"
+ *
+ *
+
+//#define BSP_USING_SOFTUART1
+//#define BSP_SOFTUART1_TX_PIN    "PG14"
+//#define BSP_SOFTUART1_RX_PIN    "PG9"
+
+-------------------------- SOFTUART CONFIG END --------------------------
+*/
+
 #if defined(BSP_USING_SOFTUART1)
 #ifndef SOFTUART1_CONFIG
 #define SOFTUART1_CONFIG                                             \
